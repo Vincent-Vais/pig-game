@@ -80,7 +80,6 @@ body {
     color: #EB4D4D;
     top: -7px;
     right: 10px;
-    
 }
 
 .player-current-box {
@@ -103,7 +102,7 @@ body {
     font-size: 30px;
 }
 
-button {
+button{
     position: absolute;
     width: 200px;
     left: 50%;
@@ -148,6 +147,94 @@ i {
     transform: translateX(-50%);
     height: 100px;
     box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.10);
+    display: none;
+}
+
+.left{
+    position: absolute;
+    display: inline-flex;
+    width: 30%;
+    justify-content: center;
+    top: 10vh;
+    left: 7vw;
+}
+
+.right{
+    position: absolute;
+    display: inline-flex;
+    width: 30%;
+    justify-content: center;
+    top: 10vh;
+    left: 42vw;
+}
+
+.special img{
+    width: 40px;
+    height: 40px;
+    margin: 0 1vw;
+}
+
+form{
+    position: absolute;
+    left: 13vw;
+}
+
+form div{
+    margin: 5vh 0;
+}
+
+form label{
+    display: inline-block;
+    font-size: 3rem;
+    width: 20vw;
+    text-align: right;
+}
+form input{
+    font-size: 3rem;
+    height: 3rem;
+    width: 20vw;
+    border: none;
+    margin-left: 2vw;
+    color: red;
+}
+input:focus{
+    outline: none;
+}
+.cursor{
+    display: inline-block;
+    padding-top: 1vh;
+}
+.cursor i{
+    position: absolute;
+    width: 1px;
+    height: 3rem;
+    margin-top: 100px;
+    background-color: rgba(153, 0, 0, 0.5);
+    left: 52.3%;
+    animation-name: blink;
+    animation-duration: 1500ms;
+    animation-iteration-count: infinite;
+    opacity: 1;
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes blink {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+#start-game{
+    position: absolute;
+    top: 60vh;
+    left: 60vw;
+}
+#start-game i{
+    font-size: 5rem;
+}
+
+.hidden{
+    display: none;
 }
 
 .winner { background-color: #f7f7f7; }
